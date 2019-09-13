@@ -23,9 +23,11 @@ Feature Generation was inspired by this starter kernel: https://www.kaggle.com/d
 One of the drawbacks of this approach is that image classifiers handle rgb images (3 channels) yet the mel spectrograms reflect greyscale images (all channels get the same info).  I tried some additional experiments where I increased the frequency bands of the mel spectrogram and spread those across the three color channels.  THe thought was that this would provide additional information to the network and avoid redundant channel info.  Cross validation results showed that this did not produce better results, however.
 
 Black and white Mel spectrogram (all channels equal)
+
 ![mel spectrogram](https://raw.githubusercontent.com/filipmu/Kaggle-freesound-audio-tagging-2019/master/bw%20mel%20spectrogram.png)
 
 Colored Mel spectrogram (lower bands in red channel, mid bands in green channel, high bands in blue channel)
+
 ![colored mel spectrogram](https://raw.githubusercontent.com/filipmu/Kaggle-freesound-audio-tagging-2019/master/3%20color%20mel%20spectrogram.png)
 
 
